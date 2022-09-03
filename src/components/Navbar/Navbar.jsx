@@ -1,30 +1,23 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+import { logo, links } from "../data/header";
 
 const Navbar = () => {
+  const renderedLinks = links.map((link, index) => {
+    <li className={styles.link} key={index}>
+      <a target="_blank" rel="noopener noreferrer" href={link.link}>
+        {link.name}
+      </a>
+    </li>;
+  });
+
   return (
     <section className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="#">Kenii</a>
+          <a href={logo.link}>{logo.name}</a>
         </div>
-        <ul className={styles.links}>
-          <li className={styles.link}>
-            <a href="#">Linkedin</a>
-          </li>
-          <li className={styles.link}>
-            <a href="#">Github</a>
-          </li>
-          <li className={styles.link}>
-            <a href="#">CodePen</a>
-          </li>
-          <li className={styles.link}>
-            <a href="#">Twitter</a>
-          </li>
-          <li className={styles.link}>
-            <a href="#">Instagram</a>
-          </li>
-        </ul>
+        <ul className={styles.links}>{renderedLinks}</ul>
       </div>
     </section>
   );

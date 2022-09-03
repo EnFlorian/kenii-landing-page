@@ -1,30 +1,23 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { copyRight, socials } from "../data/footer";
 
 const Footer = () => {
+  const renderedSocials = socials.map((social, index) => {
+    <li className={styles.social} key={index}>
+      <a target="_blank" rel="noopener noreferrer" href={social.link}>
+        {social.icon}
+      </a>
+    </li>;
+  });
+
   return (
     <section className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <a href="#">Kenii</a>
-        </div>
-        <ul className={styles.socials}>
-          <li className={styles.social}>
-            <a href="#">Linkedin</a>
-          </li>
-          <li className={styles.social}>
-            <a href="#">Github</a>
-          </li>
-          <li className={styles.social}>
-            <a href="#">CodePen</a>
-          </li>
-          <li className={styles.social}>
-            <a href="#">Twitter</a>
-          </li>
-          <li className={styles.social}>
-            <a href="#">Instagram</a>
-          </li>
-        </ul>
+        <p className={styles.copyRight}>
+          &copy; {copyRight.year} - {copyRight.name}
+        </p>
+        <ul className={styles.socials}>{renderedSocials}</ul>
       </div>
     </section>
   );

@@ -1,23 +1,19 @@
 import React from "react";
 import styles from "./Main.module.css";
+import { content } from "../data/main";
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Kenii</h1>
-          <h1 className={styles.subtitle}>Frontend Developer</h1>
-          <p className={styles.description}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit quos eum repellat
-            debitis cupiditate? Alias quibusdam nobis debitis labore ducimus. Reprehenderit mollitia
-            molestiae vel quidem obcaecati nihil rerum consequuntur. Nam est, possimus in, quas
-            itaque quasi odio ratione placeat exercitationem magnam eius non reiciendis repellat
-            delectus quam distinctio animi eos ullam quod quidem obcaecati totam vero. Minima,
-            consequatur nesciunt.
-          </p>
+          <h1 className={styles.title}>{content.title}</h1>
+          <h1 className={styles.subtitle}>{content.subtitle}</h1>
+          <p className={styles.description}>{content.description}</p>
           <button className={styles.button}>
-            <a href="#">Contact Me</a>
+            <a rel="noopener noreferrer" href={content.button.link}>
+              content.button.name
+            </a>
           </button>
         </div>
       </div>
