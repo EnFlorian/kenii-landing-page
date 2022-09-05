@@ -1,4 +1,5 @@
-import { BsInstagram, BsTwitter, BsGithub, BsCodepen, BsLinkedin } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaCodepen } from "react-icons/fa";
 
 export const copyRight = {
   year: new Date().getFullYear(),
@@ -18,7 +19,7 @@ export const socials = [
   },
   {
     name: "CodePen",
-    icon: <BsCodepen />,
+    icon: <FaCodepen />,
     link: "#",
   },
   {

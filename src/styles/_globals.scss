@@ -1,0 +1,24 @@
+:root {
+  --footer-height: 4.5rem;
+  --navbar-height: 4.5rem;
+
+  --transition-slow: all 0.3s ease-in-out;
+  --transition-base: all 0.2s ease-in-out;
+  --transition-fast: all 0.1s ease-in-out;
+
+  --box-shadow-hover: 4px 4px 8px var(--clr-shadow);
+  --box-shadow-primary: 1px 1px 9px var(--clr-shadow);
+  --clr-shadow: hsl(220, 26%, 60%);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
