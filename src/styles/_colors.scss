@@ -1,12 +1,18 @@
 :root {
   --clr-bg-0: #ffffff;
-  --clr-bg-1: #fafafa;
-  --clr-bg-2: #f5f5f5;
+  --clr-bg-1: #050614;
+  --clr-bg-2: #565656;
 
   --clr-text-0: #ffffff;
-  --clr-text-1: #333333;
-  --clr-text-2: #666666;
+  --clr-text-1: #e2e8f0;
+  --clr-text-2: #888888;
 
-  --clr-danger-1: hsl(0, 100%, 70%);
-  --clr-danger-2: hsl(0, 100%, 60%);
+  --clr-accent-1: #36c0f7;
+
+  // gradient colors
+  --gradient-1: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
 }

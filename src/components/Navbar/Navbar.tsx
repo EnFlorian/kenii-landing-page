@@ -1,5 +1,5 @@
-import React from "react";
 import { logo, links } from "../../data/navbar";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const renderedLinks = links.map((link, index) => (
@@ -11,13 +11,20 @@ const Navbar = () => {
   ));
 
   return (
-    <section className="navbar">
-      <div className="navbar__container">
-        <div className="navbar__logo">
-          <a href={logo.link}>{logo.name}</a>
-        </div>
-        <ul className="navbar__links">{renderedLinks}</ul>
+    <section className="navbar container">
+      <div className="navbar__logo-wrapper">
+        <a className="navbar__logo-text" href={logo.link}>
+          {logo.name}
+        </a>
       </div>
+      <ul className="navbar__links">
+        {renderedLinks}
+        <li>
+          <button className="navbar__button">
+            <span className="navbar__button-text">Get in touch</span>
+          </button>
+        </li>
+      </ul>
     </section>
   );
 };

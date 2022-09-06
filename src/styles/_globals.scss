@@ -1,6 +1,6 @@
 :root {
-  --footer-height: 4.5rem;
-  --navbar-height: 4.5rem;
+  --footer-height: 6rem;
+  --navbar-height: 5rem;
 
   --transition-slow: all 0.3s ease-in-out;
   --transition-base: all 0.2s ease-in-out;
@@ -10,13 +10,17 @@
   --box-shadow-primary: 1px 1px 9px var(--clr-shadow);
   --clr-shadow: hsl(220, 26%, 60%);
 }
+body {
+  background-color: var(--clr-bg-1);
+  color: var(--clr-text-0);
+}
 
 .container {
   margin: 0 auto;
   width: 1300px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .container {
     margin: 1rem;
     width: calc(100% - 2rem);

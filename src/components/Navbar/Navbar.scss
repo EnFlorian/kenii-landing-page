@@ -1,14 +1,76 @@
-.navbar{
+.navbar {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  &__container{
-
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
-  &__logo{
-
+  &__logo-text {
+    font-size: 4rem;
+    font-weight: 700;
+    background: var(--gradient-1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  &__links{}
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
 
-  &__link{}
+  &__link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--clr-text-2);
+    transition: var(--transition-base);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__button {
+    background: var(--gradient-1);
+    position: relative;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      z-index: 1;
+      background-color: var(--clr-bg-1);
+      border-radius: 0.2rem;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  &__button-text {
+    color: var(--clr-text-1);
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: 400;
+    z-index: 2;
+  }
 }

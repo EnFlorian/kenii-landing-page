@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.scss";
 import { copyRight, socials } from "../../data/footer";
 
@@ -12,7 +11,7 @@ const Footer = () => {
   ));
 
   return (
-    <section className="footer">
+    <section className="footer container">
       <div className="footer__container">
         <p className="footer__copyright">
           &copy; {copyRight.year} - {copyRight.name}
