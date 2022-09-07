@@ -21,10 +21,10 @@
   }
 
   &__logo-text {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     background: var(--clr-text-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3rem;
     font-weight: 700;
     position: relative;
@@ -57,10 +57,10 @@
     transition: var(--transition-base);
 
     &:hover {
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
       background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -128,10 +128,10 @@
     transition: var(--transition-base);
 
     &:hover {
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
       background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
