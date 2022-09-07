@@ -1,0 +1,64 @@
+.main {
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 10rem 0;
+  gap: 3rem;
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--clr-text-1);
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--clr-text-1);
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--clr-text-2);
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+  &__button {
+    background: var(--gradient-1);
+    color: var(--clr-text-0);
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0.7rem 1.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: var(--transition-base);
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__image-wrapper {
+    flex: 1;
+  }
+
+  &__accent {
+    background: var(--gradient-1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__tag-line {
+    color: var(--clr-text-1);
+  }
+}

@@ -1,13 +1,33 @@
 .footer {
   height: 10vh;
-
-  &__container {
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--clr-text-2);
 
   &__copyright {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--clr-text-2);
+    transition: var(--transition-fast);
+    cursor: pointer;
   }
 
   &__socials {
     display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__social {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: var(--clr-text-2);
+    transition: var(--transition-fast);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--clr-accent-1);
+    }
   }
 }

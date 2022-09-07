@@ -12,12 +12,27 @@
   }
 
   &__logo-text {
-    font-size: 4rem;
+    position: relative;
+    font-size: 3rem;
     font-weight: 700;
-    background: var(--gradient-1);
+    background: var(--clr-text-1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    // diamond shape in front of the logo
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: -30%;
+      width: 2rem;
+      height: 2rem;
+      background: var(--gradient-1);
+      transform: scaleX(-0.5) rotate(45deg);
+      transform-origin: center;
+      z-index: 20;
+    }
   }
 
   &__links {
@@ -48,6 +63,7 @@
     border-radius: 0.4rem;
     cursor: pointer;
     transition: var(--transition-fast);
+    margin-left: 1.5rem;
 
     &::before {
       content: "";

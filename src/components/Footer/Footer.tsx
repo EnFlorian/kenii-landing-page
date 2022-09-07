@@ -12,12 +12,10 @@ const Footer = () => {
 
   return (
     <section className="footer container">
-      <div className="footer__container">
-        <p className="footer__copyright">
-          &copy; {copyRight.year} - {copyRight.name}
-        </p>
-        <ul className="footer__socials">{renderedSocials}</ul>
-      </div>
+      <p className="footer__copyright">
+        &copy; {copyRight.year} - {copyRight.name}
+      </p>
+      <ul className="footer__socials">{renderedSocials}</ul>{" "}
     </section>
   );
 };

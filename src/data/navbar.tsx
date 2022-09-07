@@ -25,3 +25,8 @@ export const links = [
     link: "#",
   },
 ];
+
+export const button = {
+  name: "Get in touch",
+  email: "email@yzx.com",
+};
