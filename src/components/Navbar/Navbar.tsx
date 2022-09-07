@@ -1,7 +1,10 @@
 import { logo, links } from "../../data/navbar";
+import { useUiStore } from "../../state/store";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const { openMobileMenu } = useUiStore((state) => state);
+
   const renderedLinks = links.map((link, index) => (
     <li className="navbar__link" key={index}>
       <a target="_blank" rel="noopener noreferrer" href={link.link}>
