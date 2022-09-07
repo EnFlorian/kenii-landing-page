@@ -15,8 +15,12 @@
 ## 🖼 Offline Demo
 
 ### Desktop Preview
+![Kenii - Landing Page](/demo/kenii-desktop-demo.gif)
 
-### Offline Preview
+
+### Mobile Preview
+![Kenii - Landing Page](/demo/kenii-mobile-demo.gif)
+
 
 
 ## ⚒ Installation/Setup
