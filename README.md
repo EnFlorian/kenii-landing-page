@@ -10,7 +10,7 @@
 
 ## 👩‍💻 Live Website
 
-### 
+### [Kenii (Vercel)](https://kenii-landing-page.vercel.app/)
 
 ## 🖼 Offline Demo
 
@@ -43,9 +43,11 @@ yarn run start
 | Typescript              |   Programming Language                 |
 | Vite                    |   Build tool as replacement for CRA    |
 | React                   |   Frontend Library                     |
+| Zustand.js              |   Global State Management, Mobile Menu |
 | SCSS                    |   CSS preprocessor                     |
 
 
 
 #### Implementation
+The site was implemented in a straightforward component-based way and consists of 3 parts; navbar, main section, and footer component. For the global state, zustand.js is used. All the custom content, except the page title and favicon, can be modified within the datafiles inside the data directory. 
 
