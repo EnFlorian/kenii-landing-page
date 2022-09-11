@@ -1,14 +1,14 @@
 :root {
-  --clr-bg-0: #ffffff;
-  --clr-bg-1: #050614;
-  --clr-bg-2: #565656;
-  --clr-bg-3: #111827;
+  --clr-bg-0: hsl(0, 0%, 100%);
+  --clr-bg-1: hsl(236, 60%, 5%);
+  --clr-bg-2: hsl(0, 0%, 34%);
+  --clr-bg-3: hsl(221, 39%, 11%);
 
-  --clr-text-0: #050614;
-  --clr-text-1: #e2e8f0;
-  --clr-text-2: #64748b;
+  --clr-text-0: hsl(236, 60%, 5%);
+  --clr-text-1: hsl(214, 32%, 91%);
+  --clr-text-2: hsl(215, 16%, 47%);
 
-  --clr-accent-1: #36c0f7;
+  --clr-accent-1: hsl(219, 65%, 51%);
 
   // gradient colors
   --gradient-1: linear-gradient(
