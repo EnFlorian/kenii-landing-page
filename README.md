@@ -1,6 +1,6 @@
 # 🌠 Kenii Landing Page
 
-##### Kenii is a minimal personal Landing Page that lets you centeralize your onlince presence.
+### Kenii is a minimal personal Landing Page that lets you centeralize your onlince presence.
 
 
 ## 📖 Features
