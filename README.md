@@ -30,11 +30,11 @@ The data of every section can be easily replace in its corresponding data file w
 ```Shell
 # run in the root directory of the project
 npm install
-npm run start
+npm run dev
 
 # run in the root directory of the project
 yarn install
-yarn run start
+yarn run dev
 ```
 
 
